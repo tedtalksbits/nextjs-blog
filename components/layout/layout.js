@@ -25,6 +25,7 @@ const Layout = ({ children, home }) => {
                             avatarImage='https://pbs.twimg.com/profile_images/1617750136557391873/7zLiqQIr_400x400.png'
                             headerImage='https://pbs.twimg.com/profile_banners/484391040/1643372433/1500x500'
                             description='He/Him Full-Stack Software Engineer. #100devs All things React ⚛️ 💻'
+                            size='lg'
                         />
                     ) : (
                         <UserInfoHeader

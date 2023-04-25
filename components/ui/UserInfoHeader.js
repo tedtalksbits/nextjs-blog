@@ -45,7 +45,7 @@ const UserDescription = styled.p`
 const UserInfoHeader = ({ username, fullName, headerImage, avatarImage, size = 'lg', description }) => {
     return (
         <div>
-            {size !== 'sm' && (
+            {size !== 'sm' ? (
                 <>
                     <ImageConatiner className='images'>
                         <HeaderImage src={headerImage} alt={fullName} />
@@ -55,9 +55,7 @@ const UserInfoHeader = ({ username, fullName, headerImage, avatarImage, size = '
                     <UserName className='username'>{username}</UserName>
                     <UserDescription className='description'>{description}</UserDescription>
                 </>
-            )}
-
-            {size === 'sm' && (
+            ) : (
                 <div className='flex-h align-center gap-md bg-grey-50 mb-lg'>
                     <img src={avatarImage} alt={fullName} height={34} width={34} />
                     <div className='text'>
